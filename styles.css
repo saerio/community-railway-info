@@ -3,7 +3,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    background: #f0f0f0;
+    background: #161616;
     padding: 20px;
 }
 
@@ -22,11 +22,12 @@ body {
 
 /* Status board white background */
 .status-board {
-    background: #fff;
+    background: #252525;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin: 20px; 
+    margin: 20px;
+    color: #fff; 
 }
 
 /* Separate lines */
