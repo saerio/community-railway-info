@@ -1,23 +1,86 @@
 [
-    {
-      "name": "Red Line",
-      "status": "Delayed",
-      "notice": "Minor delays due to signal problems."
-    },
-    {
-      "name": "Blue Line",
-      "status": "Cancelled",
-      "notice": "Service suspended for maintenance work."
-    },
-    {
-      "name": "Green Line",
-      "status": "Running",
-      "notice": ""
-    },
-    {
-      "name": "Yellow Line",
-      "status": "Maintenance",
-      "notice": "Scheduled maintenance until 5 PM."
-    }
-  ]
+  { 
+    "name": "R10",
+    "status": "Running",
+    "notice": ""
+  },
+  {
+    "name": "R11",
+    "status": "Running",
+    "notice": ""
+  },
+  { "name": "R12",
+  "status": "Running",
+  "notice": ""
+  },
+  {
+    "name": "IC20",
+    "status": "Running",
+    "notice": ""
+  },
+  {
+    "name": "S35",
+    "status": "Running",
+    "notice": "" },
+  {
+    "name": "IC40",
+    "status": "Running",
+    "notice": "" },
+  { 
+    "name": "R51",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "R53",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "RE60",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "RE61",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "RE62",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "RB64",
+    "status": "Maintenance",
+    "notice": "Not operating due to a track pending construction. During this time, the R51 and IC40 can be used as a substitute. Grand Depot is currently not being served by either line, please exit at Ochtrup and walk to your destination"
+  },
+  { 
+    "name": "R101",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "R102",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "IC103",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "RE104",
+    "status": "Running",
+    "notice": ""
+  },
+  { 
+    "name": "IC105",
+    "status": "Running",
+    "notice": ""
+  }
+
+]
   
