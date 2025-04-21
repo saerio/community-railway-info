@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Red Line",
+      "status": "Delayed",
+      "notice": "Minor delays due to signal problems."
+    },
+    {
+      "name": "Blue Line",
+      "status": "Cancelled",
+      "notice": "Service suspended for maintenance work."
+    },
+    {
+      "name": "Green Line",
+      "status": "On Time",
+      "notice": ""
+    },
+    {
+      "name": "Yellow Line",
+      "status": "Maintenance",
+      "notice": "Scheduled maintenance until 5 PM."
+    }
+  ]
+  
