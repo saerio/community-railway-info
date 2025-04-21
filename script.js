@@ -1,60 +1,72 @@
 async function loadTrainLines() {
-    try {
-      const response = await fetch('./lines.json');
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const lines = await response.json();
+  const response = await fetch('./lines.json');
+  const lines = await response.json();
   
-      const container = document.getElementById('lines-container');
-      container.innerHTML = ''; // clear existing content
-  
-      // Mapping for statuses
-      const statusMapping = {
-        'On Time': { class: 'on-time', icon: '✅' },
-        'Delayed': { class: 'delayed', icon: '⚠️' },
-        'Cancelled': { class: 'cancelled', icon: '❌' },
-        'Maintenance': { class: 'maintenance', icon: '🛠️' }, // New class for maintenance
-      };
-  
-      lines.forEach(line => {
-        const lineElement = document.createElement('div');
-        lineElement.className = 'line';
-  
-        const { class: statusClass = '', icon = '' } = statusMapping[line.status] || {};
-  
-        // Create line header
-        const lineHeader = document.createElement('div');
-        lineHeader.classList.add('line-header');
-  
-        const lineName = document.createElement('span');
-        lineName.classList.add('line-name');
-        lineName.textContent = line.name;
-  
-        const lineStatus = document.createElement('span');
-        lineStatus.classList.add('line-status', statusClass);
-        lineStatus.textContent = `${icon} ${line.status}`;
-  
-        lineHeader.appendChild(lineName);
-        lineHeader.appendChild(lineStatus);
-  
-        // Create line notice
-        if (line.notice) {
-          const lineNotice = document.createElement('div');
-          lineNotice.classList.add('line-notice');
-          lineNotice.textContent = line.notice;
-          lineElement.appendChild(lineNotice);
-        }
-  
-        // Append line header and notice (if any)
-        lineElement.appendChild(lineHeader);
-        container.appendChild(lineElement);
-      });
-    } catch (error) {
-      console.error('Error loading train lines:', error);
+  const container = document.getElementById('lines-container');
+  container.innerHTML = ''; // clear existing content
+
+  const statusBoard = document.createElement('div');
+  statusBoard.className = 'status-board';
+
+  lines.forEach(line => {
+    const lineElement = document.createElement('div');
+    lineElement.className = 'line';
+
+    const lineNameElement = document.createElement('div');
+    lineNameElement.className = 'line-name';
+    lineNameElement.textContent = line.name;
+
+    const statusElement = document.createElement('div');
+    statusElement.className = `status ${line.status.toLowerCase()}`;
+
+    let iconUrl = '';
+    let altText = '';
+
+    switch (line.status) {
+      case 'On Time':
+        iconUrl = 'https://img.icons8.com/color/48/000000/checked--v1.png';
+        altText = 'On Time Icon';
+        break;
+      case 'Delayed':
+        iconUrl = 'https://img.icons8.com/color/48/000000/error--v1.png';
+        altText = 'Delayed Icon';
+        break;
+      case 'Cancelled':
+        iconUrl = 'https://img.icons8.com/color/48/000000/cancel--v1.png';
+        altText = 'Cancelled Icon';
+        break;
+      case 'Maintenance':
+        iconUrl = 'https://img.icons8.com/color/48/000000/maintenance.png';
+        altText = 'Maintenance Icon';
+        break;
+      default:
+        iconUrl = '';
+        altText = '';
     }
-  }
-  
-  loadTrainLines();
-  console.log("test");
-  
+
+    const statusIcon = document.createElement('img');
+    statusIcon.src = iconUrl;
+    statusIcon.className = 'status-icon';
+    statusIcon.alt = altText;
+
+    statusElement.appendChild(statusIcon);
+    statusElement.appendChild(document.createTextNode(line.status));
+
+    lineElement.appendChild(lineNameElement);
+    lineElement.appendChild(statusElement);
+
+    if (line.notice) {
+      const noticeElement = document.createElement('div');
+      noticeElement.className = 'notice';
+      noticeElement.textContent = line.notice;
+      lineElement.appendChild(noticeElement);
+    }
+
+    statusBoard.appendChild(lineElement);
+  });
+
+  container.appendChild(statusBoard);
+}
+
+loadTrainLines();
+console.log("test");
