@@ -39,7 +39,7 @@ async function loadTrainLines() {
         // Set up the icon and status text based on the line status
         let icon = '';
         switch (line.status) {
-            case 'On Time':
+            case 'Running':
                 icon = 'https://img.icons8.com/color/48/000000/checked--v1.png';
                 break;
             case 'Delayed':

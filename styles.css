@@ -59,7 +59,7 @@ body {
 }
 
 /* Colors for different statuses */
-.status.on-time {
+.status.running {
     color: green;
 }
 
