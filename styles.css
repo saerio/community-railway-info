@@ -17,38 +17,36 @@ body {
     display: flex;
 }
 
-/* Wrapper for the status board with a white background, padding, rounded corners, and box shadow */
+/* Status board white background */
 .status-board {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    max-width: 600px; /* Optional: Set a maximum width for the status board */
     margin: 0 auto; /* Center the status board */
 }
 
-/* Individual line container with flex layout */
+/* Separate lines */
 .line {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures content is spaced between left and right */
+    justify-content: space-between; 
     padding: 10px 0;
     border-bottom: 1px solid #ddd;
 }
 
-/* Remove the border from the last line */
+/* Remove last line border */
 .line:last-child {
     border-bottom: none;
 }
 
-/* Line name style with bold font */
 .line-name {
     font-weight: bold;
     font-size: 16px;
-    flex: 1; /* This makes the line name take up available space */
+    flex: 1; 
 }
 
-/* Status container with flex layout to align the icon and text horizontally */
+/* Status section */
 .status {
     display: flex;
     align-items: center;
@@ -57,7 +55,7 @@ body {
     font-weight: bold;
 }
 
-/* Colors for different status types */
+/* Colors for different statuses */
 .status.on-time {
     color: green;
 }
@@ -75,22 +73,4 @@ body {
 .status-icon {
     width: 20px;
     height: 20px;
-}
-
-/* Ensure all icons are of uniform size */
-.status-icon {
-    width: 20px;
-    height: 20px;
-}
-
-/* Optional: You can further adjust spacing between lines or apply borders */
-.line {
-    padding: 12px 0; /* Adjust padding for spacing between lines */
-}
-
-/* If you want to add a shadow to the status items (optional) */
-.status {
-    background: #f9f9f9;
-    padding: 8px;
-    border-radius: 5px;
 }
