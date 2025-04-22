@@ -3,7 +3,7 @@ async function loadTrainLines() {
     const lines = await response.json();
 
     const suspendedcontainer = document.getElementById('suspended');
-    const okcontainer = document.getElementById('ok');
+    const okcontainer = document.getElementById('running');
 
     lines.forEach(line => {
         switch (line.status) {
