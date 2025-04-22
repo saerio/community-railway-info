@@ -8,15 +8,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <div class="notice">
-    NOTICE: Train service updates and important information appear here.
+  <div id="suspended" class="line-status" style="display: none;">
+    <h1>Suspended</h1>
+    <!-- Suspended lines will be loaded here -->
+  </div>
+  
+  <div id="ok" class="line-status">
+    <h1>No active alerts</h1>
+    <!-- Running lines will be loaded here -->
   </div>
 
-  <div id="lines-container" class="line-status">
-    <!-- Train lines will be loaded here -->
-  </div>
-
+  <script src="lines.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

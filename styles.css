@@ -7,74 +7,21 @@ body {
     padding: 20px;
 }
 
-/* Style for the notice, keeping the original design */
-.notice {
-    background: #ffec3d;
-    padding: 20px;
-    border-radius: 15px;
-    border: 2px solid #ffcc00;
-    height: flex;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 20px;
-    display: flex;
-}
 
-/* Status board white background */
-.status-board {
+.line-status {
     background: #252525;
-    padding: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin: 20px;
     color: #fff; 
 }
 
-/* Separate lines */
 .line {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-/* Remove last line border */
-.line:last-child {
-    border-bottom: none;
-}
-
-.line-name {
-    font-weight: bold;
-    font-size: 16px;
-    flex: 1; 
-}
-
-/* Status section */
-.status {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* Colors for different statuses */
-.status.running {
-    color: green;
-}
-
-.status.delayed {
-    color: orange;
-}
-
-.status.maintenance,
-.status.cancelled {
-    color: red;
-}
-
-/* Icon styling */
-.status-icon {
-    width: 20px;
-    height: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 5px;
+    padding: 5px;
 }
