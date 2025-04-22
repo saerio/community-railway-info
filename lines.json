@@ -24,8 +24,8 @@
     "notice": "" },
   {
     "name": "IC40",
-    "status": "Running",
-    "notice": "" },
+    "status": "Maintenance",
+    "notice": "Undergoing fleet upgrades." },
   { 
     "name": "R51",
     "status": "Running",
