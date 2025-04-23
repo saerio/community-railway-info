@@ -12,25 +12,54 @@ async function loadTrainLines() {
                 var newline = document.createElement("span")
                 newline.classList.add("line")
                 newline.style.backgroundColor = line.color
-                newline.innerHTML = "<b style='color: #fff;'>" + line.name + "</b>"
-                newline.onclick = function() {
-                    alert(line.notice)
-                }
+                newline.innerHTML = line.name
                 suspendedcontainer.appendChild(newline)
                 break;
             case "Running":
                 var newline = document.createElement("span")
                 newline.classList.add("line")
                 newline.style.backgroundColor = line.color
-                newline.innerHTML = "<b style='color: #fff;'>" + line.name + "</b>"
+                newline.innerHTML = line.name
                 okcontainer.appendChild(newline)
                 break;
-        
+
             default:
                 console.log(line.name + " has an invalid status")
                 break;
         }
     });
+
+    var modal = document.getElementById("modal");
+
+    document.querySelectorAll(".line").forEach(lineelement => {
+        lineelement.addEventListener("click", () => {
+            modal.style.display = "block";
+            lines.forEach((line) => {
+                var modalcontent = document.getElementById("modal-inner")
+                if (line.name == lineelement.innerHTML) {
+                    modalcontent.innerHTML = `
+                        <h1>${line.name}</h1>
+                        <p>${line.notice}</p>
+                    `
+                }
+            })
+        })
+    })
+    document.getElementById("close").onclick = () => {
+        modal.style.display = "none";
+    }
+
+    window.onclick = (event) => {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    window.addEventListener('keydown', (event) => {
+        if (event.key === "Escape") {
+            modal.style.display = "none";
+        }
+    })
 }
 
 loadTrainLines();
