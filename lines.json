@@ -104,14 +104,14 @@
   },
   {
     "name": "RE61",
-    "status": "Running",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
   {
     "name": "RE62",
-    "status": "Running",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
