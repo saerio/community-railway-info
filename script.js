@@ -40,7 +40,19 @@ async function loadTrainLines() {
                     modalcontent.innerHTML = `
                         <h1>${line.name}</h1>
                         <p>${line.notice}</p>
+                        <hr>
                     `
+                    if (line.stations == undefined || line.stations.length == 0) {
+                        modalcontent.innerHTML += `<p>Station list not available</p>`
+                    } else {
+                        var ul = document.createElement("ul")
+                        line.stations.forEach(station => {
+                            var li = document.createElement("li")
+                            li.innerHTML = station
+                            ul.appendChild(li)
+                        })
+                        modalcontent.appendChild(ul)
+                    }
                 }
             })
         })
