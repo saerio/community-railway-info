@@ -45,6 +45,7 @@ async function loadTrainLines() {
                     if (line.stations == undefined || line.stations.length == 0) {
                         modalcontent.innerHTML += `<p>Station list not available</p>`
                     } else {
+                        modalcontent.innerHTML += `<h2>Stations</h2>`;
                         var ul = document.createElement("ul")
                         line.stations.forEach(station => {
                             var li = document.createElement("li")

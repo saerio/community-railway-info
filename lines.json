@@ -4,75 +4,115 @@
     "status": "Running",
     "notice": "",
     "color": "#29B442",
-    "stations" : []
+    "stations" : [
+      "Wawer",
+      "North Bohemia - Bardo",
+      "Two Cities Central",
+      "Spawn"
+    ]
   },
   {
     "name": "R11",
     "status": "Running",
     "notice": "",
     "color": "#FF954A",
-    "stations" : []
+    "stations" : [
+      "Riverside Central",
+      "Kothausen",
+      "r. Station",
+      "Silverfall"
+    ]
   },
   {
     "name": "R12",
     "status": "Running",
     "notice": "",
     "color": "#29B442",
-    "stations" : []
+    "stations" : [
+      "North Bohemia",
+      "Wawer"
+    ]
   },
   {
     "name": "IC20",
     "status": "Running",
     "notice": "",
     "color": "#378648",
-    "stations" : []
+    "stations" : [
+      "Wawer",
+      "Two Cities Central",
+      "Spawn",
+      "Salzingen Hauptbahnhof"
+    ]
   },
   {
     "name": "S35",
     "status": "Running",
     "notice": "",
     "color": "#C37A99",
-    "stations" : []
+    "stations" : [
+      "Candenset West",
+      "Candenset South",
+      "Two Cities Central"
+    ]
   },
   {
     "name": "IC40",
     "status": "Running",
     "notice": "",
     "color": "#BA42AE",
-    "stations" : []
+    "stations" : [
+      "Lursin",
+      "Sola Interchange",
+      "Elmswalde Hauptbahnhof"
+    ]
   },
   {
     "name": "R51",
     "status": "Running",
     "notice": "",
     "color": "#B1FA4C",
-    "stations" : []
+    "stations" : [
+      "Salzingen Hauptbahnhof",
+      "Hohenried",
+      "Wiesenau",
+      "Ochtrup",
+      "Eichenberg",
+      "Hippostetten",
+      "Luzernthal West"
+    ]
   },
   {
     "name": "R53",
     "status": "Running",
     "notice": "",
     "color": "#FF5D5D",
-    "stations" : []
+    "stations" : [
+      "Spawn",
+      "Lavender Valley",
+      "Bärlingen",
+      "Salzingen Nord",
+      "Salzingen Hauptbahnhof"
+    ]
   },
   {
     "name": "RE60",
-    "status": "Running",
-    "notice": "",
+    "status": "Suspended",
+    "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
   {
     "name": "RE61",
     "status": "Running",
-    "notice": "",
+    "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
   {
     "name": "RE62",
     "status": "Running",
-    "notice": "",
+    "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
@@ -83,8 +123,8 @@
     "color": "#FF5D5D",
     "stations" : [
       "Spawn",
-      "Salzingen Hbf",
-      "Elmswalde Hbf",
+      "Salzingen Hauptbahnhof",
+      "Elmswalde Hauptbahnhof",
       "Ochtrup",
       "Grand Depot",
       "Hippostetten",
@@ -96,40 +136,65 @@
     "status": "Running",
     "notice": "",
     "color": "#FF954A",
-    "stations" : []
+    "stations" : [
+      "Silverfall",
+      "Molten Works",
+      "Ivory Beach",
+      "Fairfield / Pripyat (service varies)"
+    ]
   },
   {
     "name": "R102",
     "status": "Running",
     "notice": "",
     "color": "#FF954A",
-    "stations" : []
+    "stations" : [
+      "Riverside Central",
+      "Kothausen",
+      "Silverfall",
+      "Silver Aquarium",
+      "Mountain Village",
+      "South Hills"
+    ]
   },
   {
     "name": "IC103",
     "status": "Running",
     "notice": "",
     "color": "#FF954A",
-    "stations" : []
+    "stations" : [
+      "Silverfall",
+      "Szolnok",
+      "Candenset West",
+      "Wawer"
+    ]
   },
   {
     "name": "RE104",
     "status": "Running",
     "notice": "",
     "color": "#3D72E5",
-    "stations" : []
+    "stations" : [
+      "Silverfall",
+      "Kothausen",
+      "Two Cities Central"
+    ]
   },
   {
     "name": "IC105",
     "status": "Running",
     "notice": "",
     "color": "#FF954A",
-    "stations" : []
+    "stations" : [
+      "Silverfall",
+      "Novaburg Central",
+      "Salzingen Hauptbahnhof"
+    ]
   },
   {
     "name": "IC110",
-    "status": "Running",
-    "notice": "",
+    "status": "Suspended",
+    "notice": "Under construction.",
     "color": "#29b442",
     "stations" : []
   },
@@ -142,7 +207,7 @@
       "Wawer",
       "Two Cities Central",
       "Spawn",
-      "Salzingen Hbf"
+      "Salzingen Hauptbahnhof"
     ]
   },
   {
@@ -150,6 +215,12 @@
     "status": "Running",
     "notice": "",
     "color": "#45bf9d",
-    "stations" : []
+    "stations" : [
+      "Riverside Central",
+      "Kothausen",
+      "Silverfall",
+      "Szolnok",
+      "Two Cities Central"
+    ]
   }
 ]
