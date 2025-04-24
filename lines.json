@@ -3,120 +3,153 @@
     "name": "R10",
     "status": "Running",
     "notice": "",
-    "color": "#29B442"
+    "color": "#29B442",
+    "stations" : []
   },
   {
     "name": "R11",
     "status": "Running",
     "notice": "",
-    "color": "#FF954A"
+    "color": "#FF954A",
+    "stations" : []
   },
   {
     "name": "R12",
     "status": "Running",
     "notice": "",
-    "color": "#29B442"
+    "color": "#29B442",
+    "stations" : []
   },
   {
     "name": "IC20",
     "status": "Running",
     "notice": "",
-    "color": "#378648"
+    "color": "#378648",
+    "stations" : []
   },
   {
     "name": "S35",
     "status": "Running",
     "notice": "",
-    "color": "#C37A99"
+    "color": "#C37A99",
+    "stations" : []
   },
   {
     "name": "IC40",
     "status": "Running",
     "notice": "",
-    "color": "#BA42AE"
+    "color": "#BA42AE",
+    "stations" : []
   },
   {
     "name": "R51",
     "status": "Running",
     "notice": "",
-    "color": "#B1FA4C"
+    "color": "#B1FA4C",
+    "stations" : []
   },
   {
     "name": "R53",
     "status": "Running",
     "notice": "",
-    "color": "#FF5D5D"
+    "color": "#FF5D5D",
+    "stations" : []
   },
   {
     "name": "RE60",
     "status": "Running",
     "notice": "",
-    "color": "#9fc5e8"
+    "color": "#9fc5e8",
+    "stations" : []
   },
   {
     "name": "RE61",
     "status": "Running",
     "notice": "",
-    "color": "#9fc5e8"
+    "color": "#9fc5e8",
+    "stations" : []
   },
   {
     "name": "RE62",
     "status": "Running",
     "notice": "",
-    "color": "#9fc5e8"
+    "color": "#9fc5e8",
+    "stations" : []
   },
   {
-    "name": "RB64",
+    "name": "R64",
     "status": "Suspended",
     "notice": "Not operating due to a track pending construction. During this time, the R51 and IC40 can be used as a substitute. Grand Depot is currently not being served by either line, please exit at Ochtrup and walk to your destination.",
-    "color": "#FF5D5D"
+    "color": "#FF5D5D",
+    "stations" : [
+      "Spawn",
+      "Salzingen Hbf",
+      "Elmswalde Hbf",
+      "Ochtrup",
+      "Grand Depot",
+      "Hippostetten",
+      "Cherry Grove"
+    ]
   },
   {
     "name": "R101",
     "status": "Running",
     "notice": "",
-    "color": "#FF954A"
+    "color": "#FF954A",
+    "stations" : []
   },
   {
     "name": "R102",
     "status": "Running",
     "notice": "",
-    "color": "#FF954A"
+    "color": "#FF954A",
+    "stations" : []
   },
   {
     "name": "IC103",
     "status": "Running",
     "notice": "",
-    "color": "#FF954A"
+    "color": "#FF954A",
+    "stations" : []
   },
   {
     "name": "RE104",
     "status": "Running",
     "notice": "",
-    "color": "#3D72E5"
+    "color": "#3D72E5",
+    "stations" : []
   },
   {
     "name": "IC105",
     "status": "Running",
     "notice": "",
-    "color": "#FF954A"
+    "color": "#FF954A",
+    "stations" : []
   },
   {
     "name": "IC110",
     "status": "Running",
     "notice": "",
-    "color": "#29b442"
+    "color": "#29b442",
+    "stations" : []
   },
   {
     "name": "IC125",
     "status": "Running",
     "notice": "",
-    "color": "#ed558d"
+    "color": "#ed558d",
+    "stations" : [
+      "Wawer",
+      "Two Cities Central",
+      "Spawn",
+      "Salzingen Hbf"
+    ]
   },
   {
     "name": "IC682",
     "status": "Running",
     "notice": "",
-    "color": "#45bf9d"
+    "color": "#45bf9d",
+    "stations" : []
   }
 ]
