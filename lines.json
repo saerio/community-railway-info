@@ -42,7 +42,7 @@
       "Wawer",
       "Two Cities Central",
       "Spawn",
-      "Salzingen Hauptbahnhof"
+      "Salzingen Hbf"
     ]
   },
   {
@@ -64,7 +64,7 @@
     "stations" : [
       "Lursin",
       "Sola Interchange",
-      "Elmswalde Hauptbahnhof"
+      "Elmswalde Hbf"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "notice": "",
     "color": "#B1FA4C",
     "stations" : [
-      "Salzingen Hauptbahnhof",
+      "Salzingen Hbf",
       "Hohenried",
       "Wiesenau",
       "Ochtrup",
@@ -92,7 +92,7 @@
       "Lavender Valley",
       "Bärlingen",
       "Salzingen Nord",
-      "Salzingen Hauptbahnhof"
+      "Salzingen Hbf"
     ]
   },
   {
@@ -123,8 +123,8 @@
     "color": "#FF5D5D",
     "stations" : [
       "Spawn",
-      "Salzingen Hauptbahnhof",
-      "Elmswalde Hauptbahnhof",
+      "Salzingen Hbf",
+      "Elmswalde Hbf",
       "Ochtrup",
       "Grand Depot",
       "Hippostetten",
@@ -189,7 +189,7 @@
     "stations" : [
       "Silverfall",
       "Novaburg Central",
-      "Salzingen Hauptbahnhof"
+      "Salzingen Hbf"
     ]
   },
   {
@@ -208,7 +208,7 @@
       "Wawer",
       "Two Cities Central",
       "Spawn",
-      "Salzingen Hauptbahnhof"
+      "Salzingen Hbf"
     ]
   },
   {
