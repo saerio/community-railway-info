@@ -1,12 +1,12 @@
 [
   {
     "name": "R10",
-    "status": "Station notice",
-    "notice": "<b>Attention to all Northern Citizen. </b> Station N. Bohemia - Bardo is currently closed due to massive reconstruction. And also the station will be renamed. So please use the near station at Wawer.<br>Every changes will be announced.<br>We apologies for the inconvenience. Your <i><b>Magwer Transport</b></i>",
+    "status": "Running",
+    "notice": "",
     "color": "#29B442",
     "stations" : [
       "Wawer",
-      "<del>North Bohemia - Bardo</del>",
+      "North Bohemia - Bardo",
       "Two Cities Central",
       "Spawn"
     ]
@@ -97,21 +97,21 @@
   },
   {
     "name": "RE60",
-    "status": "No scheduled service",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
   {
     "name": "RE61",
-    "status": "No scheduled service",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
   },
   {
     "name": "RE62",
-    "status": "No scheduled service",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations" : []
@@ -194,7 +194,7 @@
   },
   {
     "name": "IC110",
-    "status": "No scheduled service",
+    "status": "Suspended",
     "notice": "Under construction.",
     "color": "#29b442",
     "stations" : []

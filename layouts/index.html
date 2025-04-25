@@ -1,0 +1,48 @@
+{% extends "base/base.html" %}
+{% block stylesheet %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock stylesheet %}
+
+{% block content %}
+<div class="content">
+    <div id="suspended" class="line-status" {% if not suspended_lines %}style="display: none;" {% endif %}>
+        <h1>Suspended</h1>
+        <div class="lines">
+            {% for line in suspended_lines %}
+            <div class="line-item line" data-line="{{ line.name }}">
+                {{ line.name }}
+            </div>
+            {% endfor %}
+        </div>
+        
+    </div>
+
+    <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
+        <h1>{% if running_lines %}Running Lines{% else %}No active alerts{% endif %}</h1>
+        <div class="lines">
+            {% for line in running_lines %}
+            <div class="line-item line" data-line="{{ line.name }}">
+                {{ line.name }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script>
+        fetch('/lines.json')
+            .then(response => response.json())
+            .then(linesArray => {
+                const lines = {};
+                linesArray.forEach(line => {
+                    lines[line.name] = line.color;
+                });
+                document.querySelectorAll('.line-item').forEach(element => {
+                    const lineName = element.dataset.line;
+                    if (lines[lineName]) {
+                        element.style.backgroundColor = lines[lineName];
+                    }
+                });
+            });
+    </script>
+</div>
+{% endblock content %}
