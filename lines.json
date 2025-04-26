@@ -16,8 +16,8 @@
   {
     "name": "HS10",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall",
     "stations": [
       "Silverfall",
       "Danube HQ"
@@ -28,8 +28,8 @@
   {
     "name": "R11",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall\n",
     "stations": [
       "Riverside Central",
       "Kothausen",
@@ -171,8 +171,8 @@
   {
     "name": "R101",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall\n",
     "stations": [
       "Silverfall",
       "Molten Works",
@@ -185,8 +185,8 @@
   {
     "name": "R102",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall\n",
     "stations": [
       "Riverside Central",
       "Kothausen",
@@ -201,8 +201,8 @@
   {
     "name": "IC103",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall\n",
     "stations": [
       "Silverfall",
       "Szolnok",
@@ -228,8 +228,8 @@
   {
     "name": "IC105",
     "color": "#ff954a",
-    "status": "Suspended",
-    "notice": "Works in Silverfall",
+    "status": "Possible delays",
+    "notice": "New junctions in testing at Silverfall\n",
     "stations": [
       "Silverfall",
       "Novaburg Central",
@@ -271,7 +271,7 @@
     "name": "IC693",
     "color": "#ff0000",
     "status": "No scheduled service",
-    "notice": "<h2>IC691</h2>\nPlanned InterCity train that brings people from the south to Kothausen",
+    "notice": "<h2>IC691</h2>\nPlanned InterCity train that brings people from the south to Kothausen<br><br>\n\nNote, this line is in <strong>EARLY DEVELOPMENT</strong>",
     "stations": [
       "Kothausen",
       "?...?",

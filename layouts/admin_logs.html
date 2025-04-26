@@ -19,7 +19,7 @@
             <button onclick="clearLogs()" class="smd-component_button-small clear-logs" style="font-family: Poppins;">Clear logs</button>
         </div>
         <div class="log-container">
-            {% for log in logs %}   
+            {% for log in logs|reverse %}   
             <div class="log-entry" data-level="{{ log[1].split('[')[1].split(']')[0] if '[' in log[1] else 'INFO' }}">
                 <span class="log-timestamp">{{ log[0] }}</span>
                 <span class="log-message">{{ log[1] }}</span>

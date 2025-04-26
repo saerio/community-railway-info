@@ -99,17 +99,17 @@ async def add_line():
         required_fields = ['name', 'color', 'status', 'operator_uid']
         for field in required_fields:
             if field not in data:
-                logger.error(f'Missing field: {field}')
+                logger.error(f'[@{session.get("user")["username"]}] Missing field: {field}')
                 return {'error': f'Missing field: {field}'}, 400
 
         with open(main_dir + '/lines.json', 'r+') as f:
             lines = json.load(f)
 
             if any(line.get('name') == data['name'] for line in lines):
-                logger.error('A line with that name already exists')
+                logger.error(f'[@{session.get("user")["username"]}] A line with that name already exists')
                 return {'error': 'A line with that name already exists'}, 400
 
-            logger.info(f'Adding new line: {data["name"]}')
+            logger.info(f'[@{session.get("user")["username"]}] Added new line: {data["name"]}')
             lines.append(data)
             f.seek(0)
             json.dump(lines, f, indent=2)
@@ -117,7 +117,7 @@ async def add_line():
 
         return {'success': True}, 200
     except Exception as e:
-        logger.error(f"Error while adding line: {str(e)}")
+        logger.error(f"[@{session.get("user")["username"]}] Error while adding line: {str(e)}")
         return {'error': str(e)}, 500
 
 
@@ -128,7 +128,7 @@ async def update_line(name):
 
     try:
         data = request.json
-        logger.info(f"Updating line {name} with data: {data}")
+        logger.info(f"[@{session.get("user")["username"]}] Updating line {name} with data: {data}")
 
         with open(main_dir + '/lines.json', 'r+') as f:
             lines = json.load(f)
@@ -140,10 +140,11 @@ async def update_line(name):
                     data['operator_uid'] = line.get('operator_uid')
                     lines[i] = data
                     line_updated = True
-                    logger.info(f"Line {name} updated successfully with new data: {lines[i]}")
+                    logger.info(f"[@{session.get("user")["username"]}] Line {name} updated successfully with new data: {lines[i]}")
                     break
 
             if not line_updated:
+                logger.info(f"[@{session.get('user')['username']}] Line {name} not found")
                 return {'error': f'Line {name} not found'}, 404
 
             f.seek(0)
@@ -151,8 +152,9 @@ async def update_line(name):
             f.truncate()
 
         return {'success': True}, 200
+    
     except Exception as e:
-        logger.error(f"Error while updating line {name}: {str(e)}")
+        logger.error(f"[@{session.get('user')['username']}] Error while updating line {name}: {str(e)}")
         return {'error': str(e)}, 500
 
 
@@ -169,8 +171,9 @@ async def delete_line(name):
             json.dump(lines, f, indent=2)
             f.truncate()
 
-        logger.info(f"Line {name} deleted successfully.")
+        logger.info(f"[@{session.get('user')['username']}] Deleted line {name} successfully.")
         return {'success': True}, 200
+    
     except Exception as e:
-        logger.error(f"Error while deleting line {name}: {str(e)}")
+        logger.error(f"[@{session.get("user")["username"]}] Error while deleting line {name}: {str(e)}")
         return {'error': str(e)}, 500

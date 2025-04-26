@@ -14,24 +14,29 @@ class Logger:
         log_file = os.path.join(main_dir, "server.log")
 
         file_handler = RotatingFileHandler(log_file, maxBytes=1024*1024, backupCount=5)
-        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s'))
+        file_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - [%(levelname)s] - %(message)s', 
+                                                  datefmt='%Y-%m-%d %H:%M:%S'))
         self.logger.addHandler(file_handler)
 
         console_handler = logging.StreamHandler()
-        console_handler.setFormatter(logging.Formatter('%(name)s - %(levelname)s - %(message)s'))
+        console_handler.setFormatter(logging.Formatter('%(asctime)s - %(name)s - [%(levelname)s] - %(message)s',
+                                                     datefmt='%Y-%m-%d %H:%M:%S'))
         self.logger.addHandler(console_handler)
 
-    def log(self, message):
-        self.logger.info(message)
+    def debug(self, message):
+        self.logger.debug(message)
 
-    def error(self, message):
-        self.logger.error(message)
+    def info(self, message):
+        self.logger.info(message)
 
     def warning(self, message):
         self.logger.warning(message)
 
-    def info(self, message):
-        self.logger.info(message)
-        
-        
+    def error(self, message):
+        self.logger.error(message)
+
+    def critical(self, message):
+        self.logger.critical(message)
+
+
 logger = Logger("@main")

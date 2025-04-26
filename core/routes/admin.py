@@ -1,10 +1,13 @@
 from flask import Blueprint, jsonify, render_template, session, redirect, url_for
 from core import main_dir
+from core.logger import Logger
 from core.config import config
 
 import json
 
 admin = Blueprint('admin', __name__)
+
+logger = Logger('admin')
 
 
 @admin.route('/admin')
@@ -63,6 +66,9 @@ def clear_logs():
 
     try:
         open(main_dir + '/server.log', 'w').close()
+        logger.info(f'[@{session.get("user")["username"]}] Server logs cleared successfully.')
         return jsonify({'success': True})
+    
     except Exception as e:
+        logger.error(f'[@{session.get("user")["username"]}] Error clearing server logs: {str(e)}')
         return jsonify({'success': False, 'error': str(e)}), 500
