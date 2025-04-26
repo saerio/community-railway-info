@@ -1,5 +1,6 @@
 from flask import Flask
 from core.utils import load_secret
+from core.config import config
 from core.routes.oauth2 import auth
 from core.routes.dashboard import dashboard
 from core.routes.index import index
@@ -41,8 +42,8 @@ class App:
 
     def run(self):
         self.app.run(
-            host="localhost",
-            port=30789,
-            debug=True,
+            host=config.host,
+            port=config.port,
+            debug=config.debug,
             threaded=True
         )

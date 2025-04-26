@@ -1,4 +1,9 @@
 discord_client_id: "YOUR_APP_CLIENT_ID"
 discord_client_secret: "YOUR_CLIENT_TOKEN"
 discord_redirect_uri: "YOUR_REDIRECT_URL"
+
+host: "0.0.0.0"
+port: 30789
+debug: true
+
 web_admins: ["your_user_id", "another_user_id"]
