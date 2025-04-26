@@ -16,5 +16,4 @@ EXPOSE 30789
 
 ENV PYTHONUNBUFFERED=1
 
-# Start Command
 CMD ["python3", "__main__.py"]
