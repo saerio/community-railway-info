@@ -67,9 +67,6 @@ def index_route():
 def computercraft_setup_route():
     user = session.get('user')
     
-    with open(main_dir + '/computercraft.json') as f:
-        computercraft = json.load(f)
-    
     with open(main_dir + '/lines.json') as f:
         lines = json.load(f)
     
@@ -90,6 +87,5 @@ def computercraft_setup_route():
         user=user,
         operator=operator,
         admin=admin,
-        computercraft=computercraft,
         lines=lines
     )
