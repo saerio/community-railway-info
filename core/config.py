@@ -7,8 +7,8 @@ with open(main_dir + "/config.yml", "r") as _config:
 
 class Config:
     def __init__(self):
-        self.discord_client_id = config_data["DISCORD_CLIENT_ID"]
-        self.discord_client_secret = config_data["DISCORD_CLIENT_SECRET"]
-        self.discord_redirect_uri = config_data["DISCORD_REDIRECT_URI"]
+        self.discord_client_id = config_data["discord_client_id"]
+        self.discord_client_secret = config_data["discord_client_secret"]
+        self.discord_redirect_uri = config_data["discord_redirect_uri"]
 
 config = Config()
