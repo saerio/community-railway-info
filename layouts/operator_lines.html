@@ -56,13 +56,17 @@
                         <h3>Stations:</h3>
                         <ul>
                             {% for station in line.stations %}
-                            <li>{{ station }}</li>
+                            <li>{{ station | safe }}</li>
                             {% endfor %}
                         </ul>
                     </div>
                     <div class="line-notice">
                         <h3>Notice:</h3>
+                        {% if line.notice %}
                         <div>{{ line.notice | safe }}</div>
+                        {% else %}
+                        <div>No notice available</div>
+                        {% endif %}
                     </div>
                 </div>
                 {% if admin %}

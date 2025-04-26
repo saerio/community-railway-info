@@ -79,6 +79,9 @@ async def dashboard_view():
             attributes={},
             strip=True
         )
+        
+        if 'stations' in line:
+            line['stations'] = [clean(station, tags=["del"], attributes={}, strip=True) for station in line['stations']]
 
     return render_template(
         'dashboard.html',
