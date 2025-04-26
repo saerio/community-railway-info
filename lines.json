@@ -216,7 +216,7 @@
     "name": "RE104",
     "color": "#3d72e5",
     "status": "Possible delays",
-    "notice": "Works in Silverfall\n\nThe Alba train is being sent to the depot for maintenance. The service provided by Danube will continue in the meantime.",
+    "notice": "Works in Silverfall. <br><br>The Alba train is being sent to the depot for maintenance. The service provided by Danube will continue in the meantime.",
     "stations": [
       "Silverfall",
       "Kothausen",
