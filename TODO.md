@@ -10,6 +10,7 @@
 - [ ] Add company edit modal with color change option
 - [ ] Support multiple railway companies per user
 - [ ] Add other users to company
+- [ ] Support lines having multiple operators
 
 ## Documentation
 - [x] Add ComputerCraft display installation instructions
