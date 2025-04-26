@@ -2,7 +2,7 @@
 
 ## Interface
 - [ ] Fix navbar (more mobile friendly)
-- [ ] Make "Community Railway" button link to homepage
+- [x] Make "Community Railway" button link to homepage
 - [ ] Add order alphabetical and by trains to train operators
 
 ## Company Management
