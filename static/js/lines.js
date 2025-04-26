@@ -25,11 +25,22 @@ function fetchLines() {
                     const lineData = linesData.find(line => line.name === clickedLineName);
 
                     if (lineData) {
+                        const statusEmoji = (() => {
+                            switch(lineData.status) {
+                                case 'Running': return '✅';
+                                case 'Possible delays': return '⚠️';
+                                case 'No scheduled service': return '🌙';
+                                case 'Suspended': return '🚫';
+                                default: return '';
+                            }
+                        })();
+
                         modalContent.innerHTML = `
                             <div style="display: flex; align-items: center">
                                 <h1 class="line-modal" style="background-color: ${lineData.color}">${lineData.name}</h1>
                                 <span style="margin-left: 16px">${lineData.operator || ''}</span>
                             </div>
+                            <h3>${statusEmoji} ${lineData.status || 'No description available'}</h3>
                             <p>${lineData.notice || 'No notice available'}</p>
                             <hr>
                         `;
