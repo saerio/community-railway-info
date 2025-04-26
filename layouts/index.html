@@ -5,6 +5,15 @@
 
 {% block content %}
 <div class="content">
+  {% if maintenance_mode %}
+  <div class="line-status" style="background-color: rgb(255, 115, 0);">
+    <h1>🚧 Maintenance</h1>
+    <p>We are currently performing maintenance on the system. Please check back later.</p>
+
+    <p>{{ maintenance_message | safe }}</p>
+  </div>
+  {% endif %}
+
   <div id="suspended" class="line-status" {% if not suspended_lines %}style="display: none;" {% endif %}>
     <h1>🚫 Suspended</h1>
 

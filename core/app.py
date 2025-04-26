@@ -25,9 +25,9 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 app.register_blueprint(auth)
 app.register_blueprint(dashboard)
 app.register_blueprint(index)
+app.register_blueprint(operators)
 
 app.add_url_rule(rule="/admin", view_func=admin)
-app.add_url_rule(rule="/operators", view_func=operators)
 
 
 @app.route('/lines.json')

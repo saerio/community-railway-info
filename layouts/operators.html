@@ -20,9 +20,10 @@
             <div class="line-item line" id="operator-{{ operator.uid }}" 
                  data-color="{{ operator.color }}"
                  data-name="{{ operator.name }}"
-                 data-trains="{{ operator.train_count }}">
+                 data-trains="{{ operator.train_count }}"
+                 onclick="window.location.href='/operators/{{ operator.uid }}'">
                 <span class="operator-name">{{ operator.name }}</span>
-                <span class="train-count">({{ operator.train_count }} Trains)</span>
+                <span class="train-count">({{ operator.train_count }})</span>
             </div>
             <script>
                 document.getElementById('operator-{{ operator.uid }}').style.backgroundColor = '{{ operator.color }}';

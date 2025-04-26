@@ -60,7 +60,9 @@ def index_route():
         running_lines=running_lines,
         possible_delays_lines=possible_delays_lines,
         no_scheduled_service=no_scheduled_service,
-        lines=lines
+        lines=lines,
+        maintenance_mode=config.maintenance_mode,
+        maintenance_message=config.maintenance_message
     )
 
 @index.route('/computercraft-setup')
