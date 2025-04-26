@@ -17,8 +17,9 @@ def admin():
     with open(main_dir + '/operators.json') as f:
         operators = json.load(f)
 
-    operator = next(
-        (op for op in operators if user['id'] in op['users']), None)
+    operator = None
+    if user and 'id' in user:
+        operator = next((op for op in operators if user['id'] in op['users']), None)
 
     return render_template(
         'admin.html',
