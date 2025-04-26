@@ -49,7 +49,7 @@ function fetchLines() {
                         }
 
                         modal.style.display = "block";
-                        // Kleine Verzögerung für die Animation
+                        document.body.classList.add('blur');
                         setTimeout(() => {
                             modal.classList.add('show');
                         }, 10);
