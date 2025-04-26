@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, session, redirect, url_for
+from flask import Blueprint, jsonify, render_template, session, redirect, url_for
 from core import main_dir
 from core.config import config
 
@@ -53,3 +53,16 @@ def admin_logs():
         admin=True,
         logs=logs
     )
+    
+@admin.route('/admin/clear-logs', methods=['POST'])
+def clear_logs():
+    user = session.get('user')
+    
+    if not user or user.get('id') not in config.web_admins:
+        return jsonify({'success': False, 'error': 'Unauthorized'}), 403
+
+    try:
+        open(main_dir + '/server.log', 'w').close()
+        return jsonify({'success': True})
+    except Exception as e:
+        return jsonify({'success': False, 'error': str(e)}), 500

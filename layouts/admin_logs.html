@@ -5,18 +5,57 @@
 {% endblock stylesheet %}
 
 {% block content %}
-<div class="content">
-    <h1>Server Logs</h1>
+<div class="log-content">
+    <center><h1>Server Logs</h1></center>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul>
-                    {% for log in logs %}
-                    <pre>{{ log[0] }}: {{ log[1] }}</pre>
-                    {% endfor %}
-                </ul>
+        <div class="log-controls">
+            <input type="text" id="logSearch" placeholder="Search Logs..." class="search-input">
+            <select id="logLevel" class="level-select">
+                <option value="all">All levels</option>
+                <option value="INFO">Info</option>
+                <option value="WARNING">Warning</option>
+                <option value="ERROR">Error</option>
+            </select>
+            <button onclick="clearLogs()" class="clear-button">Clear logs</button>
+        </div>
+        <div class="log-container">
+            {% for log in logs %}   
+            <div class="log-entry" data-level="{{ log[1].split('[')[1].split(']')[0] if '[' in log[1] else 'INFO' }}">
+                <span class="log-message">{{ log[0] }} {{ log[1] }}</span>
             </div>
+            {% endfor %}
         </div>
     </div>
 </div>
+
+<script>
+document.getElementById('logSearch').addEventListener('input', filterLogs);
+document.getElementById('logLevel').addEventListener('change', filterLogs);
+
+function filterLogs() {
+    const searchText = document.getElementById('logSearch').value.toLowerCase();
+    const selectedLevel = document.getElementById('logLevel').value;
+    
+    document.querySelectorAll('.log-entry').forEach(entry => {
+        const text = entry.textContent.toLowerCase();
+        const level = entry.dataset.level;
+        const matchesSearch = text.includes(searchText);
+        const matchesLevel = selectedLevel === 'all' || level === selectedLevel;
+        
+        entry.style.display = matchesSearch && matchesLevel ? 'block' : 'none';
+    });
+}
+
+function clearLogs() {
+    if (confirm('Möchten Sie wirklich alle Logs löschen?')) {
+        fetch('/admin/clear-logs', { method: 'POST' })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.querySelector('.log-container').innerHTML = '';
+                }
+            });
+    }
+}
+</script>
 {% endblock content %}
