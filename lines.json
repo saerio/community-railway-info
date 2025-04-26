@@ -82,7 +82,7 @@
       "Sola Interchange",
       "Elmswalde Hbf"
     ],
-    "operator": "..."
+    "operator": "LR"
   },
   {
     "name": "R51",
@@ -98,7 +98,7 @@
       "Hippostetten",
       "Luzernthal West"
     ],
-    "operator": "..."
+    "operator": "Agilis"
   },
   {
     "name": "R53",
@@ -112,7 +112,7 @@
       "Salzingen Nord",
       "Salzingen Hbf"
     ],
-    "operator": "..."
+    "operator": "Deutsche Bahn (DB)"
   },
   {
     "name": "RE60",
@@ -120,7 +120,7 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "..."
+    "operator": "Baylink"
   },
   {
     "name": "RE61",
@@ -128,7 +128,7 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "..."
+    "operator": "Baylink"
   },
   {
     "name": "RE62",
@@ -136,7 +136,7 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "..."
+    "operator": "Baylink"
   },
   {
     "name": "R64",
@@ -153,7 +153,7 @@
       "Cloverville",
       "Cherry Grove"
     ],
-    "operator": "..."
+    "operator": "Deutsche Bahn (DB)"
   },
   {
     "name": "R101",
@@ -226,7 +226,7 @@
     "notice": "Under construction.",
     "color": "#29b442",
     "stations": [],
-    "operator": "..."
+    "operator": "Stacode X Railways (SXR)"
   },
   {
     "name": "IC125",
@@ -239,7 +239,7 @@
       "Spawn",
       "Salzingen Hbf"
     ],
-    "operator": "..."
+    "operator": "Valiance"
   },
   {
     "name": "IC682",
@@ -253,6 +253,6 @@
       "Szolnok",
       "Two Cities Central"
     ],
-    "operator": "Danube Rails"
+    "operator": "MAV"
   }
 ]
