@@ -7,12 +7,18 @@
     {
         "name": "Danube Rails",
         "short": "DR",
-        "color": "#FF954A"
+        "color": "#FF954A",
+        "users": [
+            "787000285737517147"
+        ]
     },
     {
         "name": "Stacode X Railways",
         "short": "SXR",
-        "color": "#378648"
+        "color": "#378648",
+        "users": [
+            "761833623934337074"
+        ]
     },
     {
         "name": "Patriots Transit",
