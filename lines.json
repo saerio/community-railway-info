@@ -16,7 +16,7 @@
   {
     "name": "HS10",
     "color": "#ff954a",
-    "status": "Possible delays",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
     "stations": [
       "Silverfall",
@@ -170,9 +170,9 @@
   },
   {
     "name": "R101",
-    "status": "Possible delays",
+    "color": "#ff954a",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Silverfall",
       "Molten Works",
@@ -200,9 +200,9 @@
   },
   {
     "name": "IC103",
-    "status": "Possible delays",
+    "color": "#ff954a",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Silverfall",
       "Szolnok",
@@ -273,7 +273,7 @@
       "Szolnok",
       "Two Cities Central"
     ],
-    "operator": "MÁV",
+    "operator": "M\u00c1V",
     "operator_uid": "mav"
   },
   {

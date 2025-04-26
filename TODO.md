@@ -14,3 +14,7 @@
 
 ## Documentation
 - [x] Add ComputerCraft display installation instructions
+  
+## Admin
+- [ ] Add admin panel for adding new companies
+- [ ] Add logs
