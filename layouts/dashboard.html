@@ -52,7 +52,7 @@
                     </div>
                     <div class="line-notice">
                         <h3>Notice:</h3>
-                        <p>{{ line.notice }}</p>
+                        <div>{{ line.notice | safe }}</div>
                     </div>
                 </div>
                 <div class="line-actions">

@@ -4,6 +4,7 @@ from core.config import config
 from core.url import *
 from core import main_dir
 from core.logger import Logger
+from bleach import clean
 
 import json
 import requests
@@ -66,6 +67,18 @@ async def dashboard_view():
                 'username': user_data["username"],
                 'display_name': user_data["display_name"],
             })
+            
+    for line in operator_lines:
+        line['notice'] = clean(
+            line['notice'],
+            tags=[
+                'p', 'br', 'strong', 'em', 'a', 'ul', 'li', 'h1',
+                'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div', 'b', 'i',
+                'u', 's', 'mark', 'pre', 'blockquote'
+            ],
+            attributes={},
+            strip=True
+        )
 
     return render_template(
         'dashboard.html',
@@ -128,6 +141,7 @@ async def update_line(name):
                     data['operator_uid'] = line.get('operator_uid')
                     lines[i] = data
                     line_updated = True
+                    logger.info(f"Line {name} updated successfully with new data: {lines[i]}")
                     break
 
             if not line_updated:
@@ -137,7 +151,6 @@ async def update_line(name):
             json.dump(lines, f, indent=2)
             f.truncate()
 
-        logger.info(f"Line {name} updated successfully with new data: {lines}")
         return {'success': True}, 200
     except Exception as e:
         logger.error(f"Error while updating line {name}: {str(e)}")
