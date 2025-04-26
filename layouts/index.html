@@ -42,7 +42,7 @@
   </div>
 
   <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
-    <h1>{% if running_lines %}🚄 Running Lines{% else %}❌ No active lines{% endif %}</h1>
+    <h1>{% if running_lines %}🚄 Running service{% else %}❌ No active service{% endif %}</h1>
 
     <div class="lines">
       {% for line in running_lines %}
