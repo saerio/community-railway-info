@@ -5,44 +5,63 @@
 
 {% block content %}
 <div class="content">
-    <div id="suspended" class="line-status" {% if not suspended_lines %}style="display: none;" {% endif %}>
-        <h1>Suspended</h1>
-        <div class="lines">
-            {% for line in suspended_lines %}
-            <div class="line-item line" data-line="{{ line.name }}">
-                {{ line.name }}
-            </div>
-            {% endfor %}
-        </div>
-        
-    </div>
+  <div id="suspended" class="line-status" {% if not suspended_lines %}style="display: none;" {% endif %}>
+    <h1>🚫 Suspended</h1>
 
-    <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
-        <h1>{% if running_lines %}Running Lines{% else %}No active alerts{% endif %}</h1>
-        <div class="lines">
-            {% for line in running_lines %}
-            <div class="line-item line" data-line="{{ line.name }}">
-                {{ line.name }}
-            </div>
-            {% endfor %}
-        </div>
+    <div class="lines">
+      {% for line in suspended_lines %}
+      <div class="line-item line" data-line="{{ line.name }}">
+        {{ line.name }}
+      </div>
+      {% endfor %}
     </div>
+  </div>
 
-    <script>
-        fetch('/lines.json')
-            .then(response => response.json())
-            .then(linesArray => {
-                const lines = {};
-                linesArray.forEach(line => {
-                    lines[line.name] = line.color;
-                });
-                document.querySelectorAll('.line-item').forEach(element => {
-                    const lineName = element.dataset.line;
-                    if (lines[lineName]) {
-                        element.style.backgroundColor = lines[lineName];
-                    }
-                });
-            });
-    </script>
+  <div id="possibledelays" class="line-status" {% if not possible_delays_lines %}style="display: none;" {% endif %}>
+    <h1>⚠️ Possible delays</h1>
+
+    <div class="lines">
+      {% for line in possible_delays_lines %}
+      <div class="line-item line" data-line="{{ line.name }}">
+        {{ line.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="noscheduledservice" class="line-status" {% if not no_scheduled_service %}style="display: none;" {% endif %}>
+    <h1>🌙 No scheduled service</h1>
+
+    <div class="lines">
+      {% for line in no_scheduled_service %}
+      <div class="line-item line" data-line="{{ line.name }}">
+        {{ line.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
+    <h1>{% if running_lines %}🚄 Running Lines{% else %}❌ No active lines{% endif %}</h1>
+
+    <div class="lines">
+      {% for line in running_lines %}
+      <div class="line-item line" data-line="{{ line.name }}">
+        {{ line.name }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <div id="modal-inner"></div>
+    </div>
+  </div>
+
+  <script>
+    fetchLines();
+  </script>
 </div>
 {% endblock content %}
