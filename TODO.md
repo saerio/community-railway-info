@@ -4,3 +4,4 @@
 - make the “community railway” button at the top a link back to homepage
 - Add installation instructions for ComputerCraft display
 - Support multiple railway companies for a single user
+- Support lines having multiple operators
