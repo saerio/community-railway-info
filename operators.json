@@ -1,0 +1,100 @@
+[
+    {
+        "name": "Magwer Transport",
+        "short": "MT",
+        "color": "#29B442",
+        "users": [
+            "297644473687605258"
+        ],
+        "uid": "magwer"
+    },
+    {
+        "name": "Danube Rails",
+        "short": "DR",
+        "color": "#FF954A",
+        "users": [
+            "787000285737517147"
+        ],
+        "uid": "danube"
+    },
+    {
+        "name": "Stacode X Railways",
+        "short": "SXR",
+        "color": "#378648",
+        "users": [
+            "761833623934337074"
+        ],
+        "uid": "stacodex"
+    },
+    {
+        "name": "Patriots Transit",
+        "short": "TPT",
+        "color": "#C37A99",
+        "users": [
+            "1057870253255835679"
+        ],
+        "uid": "patriots"
+    },
+    {
+        "name": "Lursin Rails",
+        "short": "LR", 
+        "color": "#BA42AE",
+        "users": [
+            "563650375824179202"
+        ],
+        "uid": "lursin"
+    },
+    {
+        "name": "Agilis",
+        "short": "AG",
+        "color": "#B1FA4C",
+        "users": [],
+        "uid": "agilis"
+    },
+    {
+        "name": "Deutsche Bahn",
+        "short": "DB",
+        "color": "#FF5D5D",
+        "users": [
+            "596795121974902784"
+        ],
+        "uid": "deutschebahn"
+    },
+    {
+        "name": "Baylink",
+        "short": "BL",
+        "color": "#9fc5e8",
+        "users": [
+            "919253203244183603"
+        ],
+        "uid": "baylink"
+    },
+    {
+        "name": "Valiance",
+        "short": "VAL",
+        "color": "#ed558d",
+        "users": [
+            "399968653677690880"
+        ],
+        "uid": "valiance"
+    },
+    {
+        "name": "MÁV",
+        "short": "MÁV",
+        "color": "#45bf9d",
+        "users": [
+            "699695904357351536"
+        ],
+        "uid": "mav"
+    },
+    {
+        "name": "Kothausen Railways",
+        "short": "KTR",
+        "color": "#ff6a00",
+        "users": [
+            "874283885654077511",
+            "933697808152801311"
+        ],
+        "uid": "kothausen"
+    }
+]

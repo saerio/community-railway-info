@@ -2,77 +2,101 @@
   {
     "name": "R10",
     "status": "Possible delays",
-    "notice": "<b>Attention to all Northern Citizen. </b> Station N. Bohemia - Bardo is currently closed due to massive reconstruction. And also the station will be renamed. So please use the near station at Wawer.<br>Every changes will be announced.<br>We apologies for the inconvenience. Your <i><b>Magwer Transport</b></i>",
+    "notice": "<b>Attention to all Northern Citizen. </b> Station N. Bohemia - Bardo is currently closed due to massive reconstruction. <br>And also the station will be renamed. So please use the near station at Wawer.<br>Every changes will be announced.<br>We apologies for the inconvenience. Your <i><b>Magwer Transport</b></i>",
     "color": "#29B442",
-    "stations" : [
+    "stations": [
       "Wawer",
       "<del>North Bohemia - Bardo</del>",
       "Two Cities Central",
       "Spawn"
-    ]
+    ],
+    "operator": "Magwer Transport",
+    "operator_uid": "magwer"
+  },
+  {
+    "name": "HS10",
+    "color": "#ff954a",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
+    "stations": [
+      "Silverfall",
+      "Danube HQ"
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R11",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#FF954A",
-    "stations" : [
+    "stations": [
       "Riverside Central",
       "Kothausen",
       "r. Station",
       "Silverfall"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R12",
     "status": "Running",
     "notice": "",
     "color": "#29B442",
-    "stations" : [
+    "stations": [
       "North Bohemia",
       "Wawer"
-    ]
+    ],
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "IC20",
     "status": "Running",
     "notice": "",
     "color": "#378648",
-    "stations" : [
+    "stations": [
       "Wawer",
       "Two Cities Central",
       "Spawn",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "S35",
     "status": "Running",
     "notice": "",
     "color": "#C37A99",
-    "stations" : [
+    "stations": [
       "Candenset West",
       "Candenset South",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "Patriots Transit (TPT)",
+    "operator_uid": "patriots"
   },
   {
     "name": "IC40",
     "status": "Running",
     "notice": "",
     "color": "#BA42AE",
-    "stations" : [
+    "stations": [
       "Lursin",
       "Sola Interchange",
       "Elmswalde Hbf"
-    ]
+    ],
+    "operator": "Lursin (LR)",
+    "operator_uid": "lursin"
   },
   {
     "name": "R51",
     "status": "Running",
     "notice": "",
     "color": "#B1FA4C",
-    "stations" : [
+    "stations": [
       "Salzingen Hbf",
       "Hohenried",
       "Wiesenau",
@@ -80,48 +104,58 @@
       "Eichenberg",
       "Hippostetten",
       "Luzernthal West"
-    ]
+    ],
+    "operator": "Agilis",
+    "operator_uid": "agilis"
   },
   {
     "name": "R53",
     "status": "Running",
     "notice": "",
     "color": "#FF5D5D",
-    "stations" : [
+    "stations": [
       "Spawn",
       "Lavender Valley",
-      "Bärlingen",
+      "B\u00e4rlingen",
       "Salzingen Nord",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "Deutsche Bahn (DB)",
+    "operator_uid": "deutschebahn"
   },
   {
     "name": "RE60",
     "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations": [],
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "RE61",
     "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations": [],
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "RE62",
     "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations": [],
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "R64",
     "status": "Suspended",
     "notice": "Not operating due to a track pending construction. During this time, the R51 and IC40 can be used as a substitute. Grand Depot is currently not being served by either line, please exit at Ochtrup and walk to your destination.",
     "color": "#FF5D5D",
-    "stations" : [
+    "stations": [
       "Spawn",
       "Salzingen Hbf",
       "Elmswalde Hbf",
@@ -130,98 +164,116 @@
       "Hippostetten",
       "Cloverville",
       "Cherry Grove"
-    ]
+    ],
+    "operator": "Deutsche Bahn (DB)",
+    "operator_uid": "deutschebahn"
   },
   {
     "name": "R101",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#FF954A",
-    "stations" : [
+    "stations": [
       "Silverfall",
       "Molten Works",
       "Ivory Beach",
       "Fairfield / Pripyat (service varies)"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R102",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#FF954A",
-    "stations" : [
+    "stations": [
       "Riverside Central",
       "Kothausen",
       "Silverfall",
       "Silver Aquarium",
       "Mountain Village",
       "South Hills"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC103",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#FF954A",
-    "stations" : [
+    "stations": [
       "Silverfall",
       "Szolnok",
       "Candenset West",
       "Wawer"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "RE104",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#3D72E5",
-    "stations" : [
+    "stations": [
       "Silverfall",
       "Kothausen",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC105",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#FF954A",
-    "stations" : [
+    "stations": [
       "Silverfall",
       "Novaburg Central",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC110",
     "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#29b442",
-    "stations" : []
+    "stations": [],
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "IC125",
     "status": "Running",
     "notice": "",
     "color": "#ed558d",
-    "stations" : [
+    "stations": [
       "Wawer",
       "Two Cities Central",
       "Spawn",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "Valiance",
+    "operator_uid": "valiance"
   },
   {
     "name": "IC682",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "Works in Silverfall",
     "color": "#45bf9d",
-    "stations" : [
+    "stations": [
       "Riverside Central",
       "Kothausen",
       "Silverfall",
       "Szolnok",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "MAV",
+    "operator_uid": "mav"
   }
 ]

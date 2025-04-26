@@ -1,0 +1,23 @@
+{% extends "base/base.html" %}
+{% block stylesheet %}
+<link rel="stylesheet" href="/static/css/index.css">
+{% endblock stylesheet %}
+
+{% block content %}
+<div class="content">
+    <div class="line-status">
+        <h1>Train Operators</h1>
+
+        <div class="lines">
+            {% for operator in operators %}
+            <div class="line-item line" id="operator-{{ operator.uid }}" data-color="{{ operator.color }}">
+                {{ operator.name }}
+            </div>
+            <script>
+                document.getElementById('operator-{{ operator.uid }}').style.backgroundColor = '{{ operator.color }}';
+            </script>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}
