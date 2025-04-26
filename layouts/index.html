@@ -33,7 +33,7 @@
       <h1>⚠️ Possible delays</h1>
 
       {% if not possible_delays_lines %}
-      <p>No delays reported.</p>
+      <p>No delays reported</p>
       {% endif %}
   
       <div class="lines">
@@ -49,7 +49,7 @@
       <h1>🌙 No scheduled service</h1>
 
       {% if not no_scheduled_service %}
-      <p>No delays reported.</p>
+      <p>No scheduled service available</p>
       {% endif %}
   
       <div class="lines">
@@ -63,7 +63,6 @@
   </div>
 
   
-
   <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
     <h1>{% if running_lines %}🚄 Running service{% else %}❌ No active service{% endif %}</h1>
 
