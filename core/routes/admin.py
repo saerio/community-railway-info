@@ -9,7 +9,7 @@ def admin():
     user = session.get('user')
 
     if not user or user.get('id') not in config.web_admins:
-        return redirect(url_for('index'))
+        return redirect(url_for('index.index_route'))
 
     with open(main_dir + '/lines.json') as f:
         lines = json.load(f)
