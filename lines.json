@@ -15,9 +15,9 @@
   },
   {
     "name": "HS10",
+    "color": "#ff954a",
     "status": "Possible delays",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Silverfall",
       "Danube HQ"

@@ -1,7 +1,10 @@
 from flask import Flask
 from core.utils import load_secret
-from core.routes.index import index
 from core.routes.oauth2 import auth
+from core.routes.dashboard import dashboard
+from core.routes.index import index
+from core.routes.admin import admin
+from core.routes.operators import operators
 
 import os
 import json
@@ -18,7 +21,11 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 
 app.register_blueprint(auth)
+app.register_blueprint(dashboard)
+
 app.add_url_rule(rule="/", view_func=index)
+app.add_url_rule(rule="/admin", view_func=admin)
+app.add_url_rule(rule="/operators", view_func=operators)
 
 
 @app.route('/lines.json')
