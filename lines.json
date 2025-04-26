@@ -10,7 +10,8 @@
       "Two Cities Central",
       "Spawn"
     ],
-    "operator": "Magwer Transport"
+    "operator": "Magwer Transport",
+    "operator_uid": "magwer"
   },
   {
     "name": "HS10",
@@ -21,7 +22,8 @@
       "Silverfall",
       "Danube HQ"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R11",
@@ -34,7 +36,8 @@
       "r. Station",
       "Silverfall"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R12",
@@ -45,7 +48,8 @@
       "North Bohemia",
       "Wawer"
     ],
-    "operator": "Stacode X Railways (SXR)"
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "IC20",
@@ -58,7 +62,8 @@
       "Spawn",
       "Salzingen Hbf"
     ],
-    "operator": "Stacode X Railways (SXR)"
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "S35",
@@ -70,7 +75,8 @@
       "Candenset South",
       "Two Cities Central"
     ],
-    "operator": "Patriots Transit (TPT)"
+    "operator": "Patriots Transit (TPT)",
+    "operator_uid": "patriots"
   },
   {
     "name": "IC40",
@@ -82,7 +88,8 @@
       "Sola Interchange",
       "Elmswalde Hbf"
     ],
-    "operator": "LR"
+    "operator": "Lursin (LR)",
+    "operator_uid": "lursin"
   },
   {
     "name": "R51",
@@ -98,7 +105,8 @@
       "Hippostetten",
       "Luzernthal West"
     ],
-    "operator": "Agilis"
+    "operator": "Agilis",
+    "operator_uid": "agilis"
   },
   {
     "name": "R53",
@@ -112,7 +120,8 @@
       "Salzingen Nord",
       "Salzingen Hbf"
     ],
-    "operator": "Deutsche Bahn (DB)"
+    "operator": "Deutsche Bahn (DB)",
+    "operator_uid": "deutschebahn"
   },
   {
     "name": "RE60",
@@ -120,7 +129,8 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "Baylink"
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "RE61",
@@ -128,7 +138,8 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "Baylink"
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "RE62",
@@ -136,7 +147,8 @@
     "notice": "Under construction.",
     "color": "#9fc5e8",
     "stations": [],
-    "operator": "Baylink"
+    "operator": "Baylink",
+    "operator_uid": "baylink"
   },
   {
     "name": "R64",
@@ -153,7 +165,8 @@
       "Cloverville",
       "Cherry Grove"
     ],
-    "operator": "Deutsche Bahn (DB)"
+    "operator": "Deutsche Bahn (DB)",
+    "operator_uid": "deutschebahn"
   },
   {
     "name": "R101",
@@ -166,7 +179,8 @@
       "Ivory Beach",
       "Fairfield / Pripyat (service varies)"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "R102",
@@ -181,7 +195,8 @@
       "Mountain Village",
       "South Hills"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC103",
@@ -194,7 +209,8 @@
       "Candenset West",
       "Wawer"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "RE104",
@@ -206,7 +222,8 @@
       "Kothausen",
       "Two Cities Central"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC105",
@@ -218,7 +235,8 @@
       "Novaburg Central",
       "Salzingen Hbf"
     ],
-    "operator": "Danube Rails"
+    "operator": "Danube Rails",
+    "operator_uid": "danube"
   },
   {
     "name": "IC110",
@@ -226,7 +244,8 @@
     "notice": "Under construction.",
     "color": "#29b442",
     "stations": [],
-    "operator": "Stacode X Railways (SXR)"
+    "operator": "Stacode X Railways (SXR)",
+    "operator_uid": "stacodex"
   },
   {
     "name": "IC125",
@@ -239,7 +258,8 @@
       "Spawn",
       "Salzingen Hbf"
     ],
-    "operator": "Valiance"
+    "operator": "Valiance",
+    "operator_uid": "valiance"
   },
   {
     "name": "IC682",
@@ -253,6 +273,7 @@
       "Szolnok",
       "Two Cities Central"
     ],
-    "operator": "MAV"
+    "operator": "MAV",
+    "operator_uid": "mav"
   }
 ]
