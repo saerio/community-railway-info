@@ -3,7 +3,9 @@
         "name": "Magwer Transport",
         "short": "MT",
         "color": "#29B442",
-        "users": [],
+        "users": [
+            "297644473687605258"
+        ],
         "uid": "magwer"
     },
     {
@@ -28,7 +30,9 @@
         "name": "Patriots Transit",
         "short": "TPT",
         "color": "#C37A99",
-        "users": [],
+        "users": [
+            "1057870253255835679"
+        ],
         "uid": "patriots"
     },
     {
@@ -75,10 +79,12 @@
         "uid": "valiance"
     },
     {
-        "name": "MAV",
-        "short": "MAV",
+        "name": "MÁV",
+        "short": "MÁV",
         "color": "#45bf9d",
-        "users": [],
+        "users": [
+            "699695904357351536"
+        ],
         "uid": "mav"
     },
     {
