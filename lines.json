@@ -283,19 +283,8 @@
     "notice": "Early planning",
     "stations": [
       "Kothausen",
-      "Oberhausen",
+      "...",
       "Salzingen Hbf"
-    ],
-    "operator": "Kothausen Railways",
-    "operator_uid": "kothausen"
-  },
-  {
-    "name": "RJ41",
-    "color": "#ff0000",
-    "status": "No scheduled service",
-    "notice": "Early planning",
-    "stations": [
-      "Kothausen"
     ],
     "operator": "Kothausen Railways",
     "operator_uid": "kothausen"
