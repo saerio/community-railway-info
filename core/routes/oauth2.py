@@ -44,11 +44,14 @@ async def callback():
 
     discord = make_discord_session(token=token)
     user = discord.get(f'{DISCORD_API_URL}/users/@me').json()
+    
+    print(user)
 
     session['user'] = {
         'id': user['id'],
         'username': user['username'],
-        'avatar': user['avatar']
+        'avatar': user['avatar'],
+        "global_name": user.get('global_name', user['username']),
     }
 
     return redirect(url_for('index'))

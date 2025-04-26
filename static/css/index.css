@@ -31,8 +31,8 @@
 }
 
 .line:hover {
-    box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.35), 0 25px 65px 0 rgba(0, 0, 0, 0.30);
-    transform: translateY(-5px);
+    box-shadow: 0 16px 24px 0 rgba(44, 44, 44, 0.6), 0 25px 65px 0 rgba(0, 0, 0, 0.30);
+    transform: translateY(-2px);
 }
 
 .line-modal {

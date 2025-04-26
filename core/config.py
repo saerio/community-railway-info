@@ -10,5 +10,6 @@ class Config:
         self.discord_client_id = config_data["discord_client_id"]
         self.discord_client_secret = config_data["discord_client_secret"]
         self.discord_redirect_uri = config_data["discord_redirect_uri"]
+        self.web_admins = config_data["web_admins"]
 
 config = Config()
