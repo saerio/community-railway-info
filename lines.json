@@ -1,15 +1,16 @@
 [
   {
     "name": "R10",
-    "status": "Running",
-    "notice": "",
+    "status": "Possible delays",
+    "notice": "<b>Attention to all Northern Citizen. </b> Station N. Bohemia - Bardo is currently closed due to massive reconstruction. <br>And also the station will be renamed. So please use the near station at Wawer.<br>Every changes will be announced.<br>We apologies for the inconvenience. Your <i><b>Magwer Transport</b></i>",
     "color": "#29B442",
     "stations" : [
       "Wawer",
-      "North Bohemia - Bardo",
+      "<del>North Bohemia - Bardo</del>",
       "Two Cities Central",
       "Spawn"
-    ]
+    ],
+    "operator": "Magwer Transport"
   },
   {
     "name": "R11",
@@ -21,7 +22,8 @@
       "Kothausen",
       "r. Station",
       "Silverfall"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "R12",
@@ -31,7 +33,8 @@
     "stations" : [
       "North Bohemia",
       "Wawer"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC20",
@@ -43,7 +46,8 @@
       "Two Cities Central",
       "Spawn",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "S35",
@@ -54,7 +58,8 @@
       "Candenset West",
       "Candenset South",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC40",
@@ -65,7 +70,8 @@
       "Lursin",
       "Sola Interchange",
       "Elmswalde Hbf"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "R51",
@@ -80,7 +86,8 @@
       "Eichenberg",
       "Hippostetten",
       "Luzernthal West"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "R53",
@@ -93,28 +100,32 @@
       "Bärlingen",
       "Salzingen Nord",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "RE60",
-    "status": "Suspended",
+    "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations" : [],
+    "operator": "..."
   },
   {
     "name": "RE61",
-    "status": "Suspended",
+    "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations" : [],
+    "operator": "..."
   },
   {
     "name": "RE62",
-    "status": "Suspended",
+    "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#9fc5e8",
-    "stations" : []
+    "stations" : [],
+    "operator": "..."
   },
   {
     "name": "R64",
@@ -130,7 +141,8 @@
       "Hippostetten",
       "Cloverville",
       "Cherry Grove"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "R101",
@@ -142,7 +154,8 @@
       "Molten Works",
       "Ivory Beach",
       "Fairfield / Pripyat (service varies)"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "R102",
@@ -156,7 +169,8 @@
       "Silver Aquarium",
       "Mountain Village",
       "South Hills"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC103",
@@ -168,7 +182,8 @@
       "Szolnok",
       "Candenset West",
       "Wawer"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "RE104",
@@ -179,7 +194,8 @@
       "Silverfall",
       "Kothausen",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC105",
@@ -190,14 +206,16 @@
       "Silverfall",
       "Novaburg Central",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC110",
-    "status": "Suspended",
+    "status": "No scheduled service",
     "notice": "Under construction.",
     "color": "#29b442",
-    "stations" : []
+    "stations" : [],
+    "operator": "..."
   },
   {
     "name": "IC125",
@@ -209,7 +227,8 @@
       "Two Cities Central",
       "Spawn",
       "Salzingen Hbf"
-    ]
+    ],
+    "operator": "..."
   },
   {
     "name": "IC682",
@@ -222,6 +241,7 @@
       "Silverfall",
       "Szolnok",
       "Two Cities Central"
-    ]
+    ],
+    "operator": "..."
   }
 ]
