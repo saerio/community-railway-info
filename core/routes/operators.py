@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, session, redirect, url_for
 from core import main_dir
-from core.config import config
+from core.config import config, allowed_tags
 
 import json
 import requests
@@ -89,11 +89,7 @@ def operator_route(uid):
     for line in operator_lines:
         line['notice'] = clean(
             line['notice'],
-            tags=[
-                'p', 'br', 'strong', 'em', 'a', 'ul', 'li', 'h1',
-                'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div', 'b', 'i',
-                'u', 's', 'mark', 'pre', 'blockquote'
-            ],
+            tags=allowed_tags,
             attributes={},
             strip=True
         )

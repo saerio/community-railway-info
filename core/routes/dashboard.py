@@ -1,6 +1,6 @@
 from flask import Blueprint, session, redirect, url_for, render_template, request
 from requests_oauthlib import OAuth2Session
-from core.config import config
+from core.config import config, allowed_tags
 from core.url import *
 from core import main_dir
 from core.logger import Logger
@@ -71,11 +71,7 @@ async def dashboard_view():
     for line in operator_lines:
         line['notice'] = clean(
             line['notice'],
-            tags=[
-                'p', 'br', 'strong', 'em', 'a', 'ul', 'li', 'h1',
-                'h2', 'h3', 'h4', 'h5', 'h6', 'span', 'div', 'b', 'i',
-                'u', 's', 'mark', 'pre', 'blockquote'
-            ],
+            tags=allowed_tags,
             attributes={},
             strip=True
         )
