@@ -3,6 +3,8 @@ async function loadTrainLines() {
     const lines = await response.json();
 
     const suspendedcontainer = document.getElementById('suspended');
+    const possibledelayscontainer = document.getElementById('possibledelays');
+    const noscheduledservicecontainer = document.getElementById('noscheduledservice');
     const okcontainer = document.getElementById('running');
 
     lines.forEach(line => {
@@ -14,6 +16,22 @@ async function loadTrainLines() {
                 newline.style.backgroundColor = line.color
                 newline.innerHTML = line.name
                 suspendedcontainer.appendChild(newline)
+                break;
+            case "Possible delays":
+                possibledelayscontainer.style.display = "block"
+                var newline = document.createElement("span")
+                newline.classList.add("line")
+                newline.style.backgroundColor = line.color
+                newline.innerHTML = line.name
+                possibledelayscontainer.appendChild(newline)
+                break;
+            case "No scheduled service":
+                noscheduledservicecontainer.style.display = "block"
+                var newline = document.createElement("span")
+                newline.classList.add("line")
+                newline.style.backgroundColor = line.color
+                newline.innerHTML = line.name
+                noscheduledservicecontainer.appendChild(newline)
                 break;
             case "Running":
                 var newline = document.createElement("span")
