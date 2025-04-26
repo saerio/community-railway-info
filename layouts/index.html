@@ -26,29 +26,43 @@
     </div>
   </div>
 
-  <div id="possibledelays" class="line-status" {% if not possible_delays_lines %}style="display: none;" {% endif %}>
-    <h1>⚠️ Possible delays</h1>
+  
 
-    <div class="lines">
-      {% for line in possible_delays_lines %}
-      <div class="line-item line" data-line="{{ line.name }}">
-        {{ line.name }}
+  <div class="possible-delays-no-scheduled-service-container">
+    <div id="possibledelays" class="line-status" style="flex: 1; ">
+      <h1>⚠️ Possible delays</h1>
+
+      {% if not possible_delays_lines %}
+      <p>No delays reported.</p>
+      {% endif %}
+  
+      <div class="lines">
+        {% for line in possible_delays_lines %}
+        <div class="line-item line" data-line="{{ line.name }}">
+          {{ line.name }}
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
+    </div>
+  
+    <div id="noscheduledservice" class="line-status" style="flex: 1;">
+      <h1>🌙 No scheduled service</h1>
+
+      {% if not no_scheduled_service %}
+      <p>No delays reported.</p>
+      {% endif %}
+  
+      <div class="lines">
+        {% for line in no_scheduled_service %}
+        <div class="line-item line" data-line="{{ line.name }}">
+          {{ line.name }}
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 
-  <div id="noscheduledservice" class="line-status" {% if not no_scheduled_service %}style="display: none;" {% endif %}>
-    <h1>🌙 No scheduled service</h1>
-
-    <div class="lines">
-      {% for line in no_scheduled_service %}
-      <div class="line-item line" data-line="{{ line.name }}">
-        {{ line.name }}
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+  
 
   <div id="running" class="line-status" {% if not running_lines %}style="display: none;" {% endif %}>
     <h1>{% if running_lines %}🚄 Running service{% else %}❌ No active service{% endif %}</h1>

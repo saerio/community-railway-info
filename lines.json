@@ -215,8 +215,8 @@
   {
     "name": "RE104",
     "color": "#3d72e5",
-    "status": "Possible delays",
-    "notice": "Works in Silverfall. <br><br>The Alba train is being sent to the depot for maintenance. The service provided by Danube will continue in the meantime.",
+    "status": "Suspended",
+    "notice": "Works in Silverfall.",
     "stations": [
       "Silverfall",
       "Kothausen",
@@ -249,9 +249,9 @@
   },
   {
     "name": "IC125",
+    "color": "#cb0a3d",
     "status": "Running",
     "notice": "",
-    "color": "#ed558d",
     "stations": [
       "Wawer",
       "Two Cities Central",
