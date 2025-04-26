@@ -277,13 +277,13 @@
     "operator_uid": "mav"
   },
   {
-    "name": "RJX31",
+    "name": "IC693",
     "color": "#ff0000",
     "status": "No scheduled service",
-    "notice": "Early planning",
+    "notice": "<h3>IC691</h3>\nPlanned InterCity train that brings people from the south to Kothausen",
     "stations": [
       "Kothausen",
-      "...",
+      "?...?",
       "Salzingen Hbf"
     ],
     "operator": "Kothausen Railways",
