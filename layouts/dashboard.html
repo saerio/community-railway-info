@@ -8,9 +8,18 @@
     <div class="dashboard-content">
         <div class="dashboard-header">
             <h1>Dashboard - {{ operator.name }}</h1>
-            {% if admin %}
-            <span class="admin-badge">Admin</span>
-            {% endif %}
+
+            <div class="operator-members">
+                {% if operator.user_datas %}
+                <div class="member-avatars">
+                    {% for user_data in operator.user_datas %}
+                    <div class="member-avatar" data-tooltip="{{ user_data.display_name }} (@{{ user_data.username }})">
+                        <img src="{{ user_data.avatar_url }}" alt="Member Avatar">
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
         </div>
 
         <div class="dashboard-controls">

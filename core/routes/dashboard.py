@@ -5,7 +5,7 @@ from core.url import *
 from core import main_dir
 
 import json
-
+import requests
 
 dashboard = Blueprint('dashboard', __name__)
 
@@ -41,6 +41,27 @@ async def dashboard_view():
             line for line in lines
             if 'operator_uid' in line and line['operator_uid'] == operator['uid']
         ]
+        
+    operators.sort(key=lambda x: x['name'])
+    
+    default_avatar = "https://cdn.discordapp.com/embed/avatars/0.png"
+
+    if operator and 'users' in operator:
+        operator['user_datas'] = []
+        for user_id in operator['users']:
+            user_data = "https://avatar-cyan.vercel.app/api/" + user_id
+            
+            try:
+                user_data = requests.get(user_data).json()
+            except Exception:
+                user_data = {"avatarUrl": default_avatar}
+            
+            operator['user_datas'].append({
+                'id': user_id,
+                'avatar_url': user_data["avatarUrl"].replace("?size=512", "?size=32"),
+                'username': user_data["username"],
+                'display_name': user_data["display_name"],
+            })
 
     return render_template(
         'dashboard.html',

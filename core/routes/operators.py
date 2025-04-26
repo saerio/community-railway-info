@@ -29,8 +29,6 @@ def operators_route():
     if user and user["id"] in config.web_admins:
         admin = True
 
-    operators.sort(key=lambda x: x['name'])
-
     return render_template(
         'operators.html',
         user=user,
@@ -64,22 +62,23 @@ def operator_route(uid):
         if 'operator_uid' in line and line['operator_uid'] == uid
     ]
     
-    avatar_base_url = "https://cdn.discordapp.com/avatars/"
     default_avatar = "https://cdn.discordapp.com/embed/avatars/0.png"
 
     if operator and 'users' in operator:
-        operator['user_avatars'] = []
+        operator['user_datas'] = []
         for user_id in operator['users']:
-            avatar_url = "https://avatar-cyan.vercel.app/api/" + user_id
+            user_data = "https://avatar-cyan.vercel.app/api/" + user_id
             
             try:
-                avatar_url = requests.get(avatar_url).json()
+                user_data = requests.get(user_data).json()
             except Exception:
-                avatar_url = {"avatarUrl": default_avatar}
+                user_data = {"avatarUrl": default_avatar}
             
-            operator['user_avatars'].append({
+            operator['user_datas'].append({
                 'id': user_id,
-                'avatar_url': avatar_url["avatarUrl"].replace("?size=512", "?size=32")
+                'avatar_url': user_data["avatarUrl"].replace("?size=512", "?size=32"),
+                'username': user_data["username"],
+                'display_name': user_data["display_name"],
             })
 
     return render_template(
