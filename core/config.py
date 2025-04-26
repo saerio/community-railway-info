@@ -16,5 +16,8 @@ class Config:
         self.debug = config_data["debug"]
         
         self.web_admins = config_data["web_admins"]
+        
+        self.maintenance_mode = config_data["maintenance_mode"]
+        self.maintenance_message = config_data["maintenance_message"]
 
 config = Config()
