@@ -67,17 +67,17 @@
             </div>
             <form id="lineForm" onsubmit="handleLineSubmit(event)">
                 <div class="form-group">
-                    <label for="lineName">Line Name:</label>
+                    <label for="lineName">Line Name</label>
                     <input type="text" id="lineName" name="name" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="lineColor">Line Color:</label>
+                    <label for="lineColor">Line Color</label>
                     <input type="color" id="lineColor" name="color" required style="width: 50px; height: 50px;">
                 </div>
 
                 <div class="form-group">
-                    <label for="lineStatus">Status:</label>
+                    <label for="lineStatus">Status</label>
                     <select id="lineStatus" name="status" required>
                         <option value="Running">Running</option>
                         <option value="Possible delays">Possible delays</option>
@@ -87,13 +87,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="lineNotice">Notice:</label>
-                    <textarea id="lineNotice" name="notice"></textarea>
+                    <label for="lineNotice">Notice (Supports HTML)</label>
+                    <textarea id="lineNotice" name="notice" rows="6"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="lineStations">Stations (one per line):</label>
-                    <textarea id="lineStations" name="stations" required></textarea>
+                    <label for="lineStations">Stations (one per line)</label>
+                    <textarea id="lineStations" name="stations" required rows="6"></textarea>
                 </div>
 
                 <input type="hidden" id="lineId" name="id">
