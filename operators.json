@@ -2,7 +2,8 @@
     {
         "name": "Magwer Transport",
         "short": "MT",
-        "color": "#29B442"
+        "color": "#29B442",
+        "users": []
     },
     {
         "name": "Danube Rails",
@@ -23,36 +24,45 @@
     {
         "name": "Patriots Transit",
         "short": "TPT",
-        "color": "#C37A99"
+        "color": "#C37A99",
+        "users": []
     },
     {
         "name": "LR",
         "short": "LR", 
-        "color": "#BA42AE"
+        "color": "#BA42AE",
+        "users": []
     },
     {
         "name": "Agilis",
         "short": "AG",
-        "color": "#B1FA4C"
+        "color": "#B1FA4C",
+        "users": []
     },
     {
         "name": "Deutsche Bahn",
         "short": "DB",
-        "color": "#FF5D5D"
+        "color": "#FF5D5D",
+        "users": []
     },
     {
         "name": "Baylink",
         "short": "BL",
-        "color": "#9fc5e8"
+        "color": "#9fc5e8",
+        "users": [
+            "919253203244183603"
+        ]
     },
     {
         "name": "Valiance",
         "short": "VAL",
-        "color": "#ed558d"
+        "color": "#ed558d",
+        "users": []
     },
     {
         "name": "MAV",
         "short": "MAV",
-        "color": "#45bf9d"
+        "color": "#45bf9d",
+        "users": []
     }
 ]
