@@ -26,7 +26,10 @@ function fetchLines() {
 
                     if (lineData) {
                         modalContent.innerHTML = `
-                            <h1 class="line-modal" style="background-color: ${lineData.color}">${lineData.name}</h1>
+                            <div style="display: flex; align-items: center">
+                                <h1 class="line-modal" style="background-color: ${lineData.color}">${lineData.name}</h1>
+                                <span style="margin-left: 16px">${lineData.operator || ''}</span>
+                            </div>
                             <p>${lineData.notice || 'No notice available'}</p>
                             <hr>
                         `;
