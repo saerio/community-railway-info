@@ -4,6 +4,7 @@ from core.config import config
 from core.routes.oauth2 import auth
 from core.routes.dashboard import dashboard
 from core.routes.index import index
+
 from core.routes.admin import admin
 from core.routes.operators import operators
 
@@ -23,8 +24,8 @@ os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 
 app.register_blueprint(auth)
 app.register_blueprint(dashboard)
+app.register_blueprint(index)
 
-app.add_url_rule(rule="/", view_func=index)
 app.add_url_rule(rule="/admin", view_func=admin)
 app.add_url_rule(rule="/operators", view_func=operators)
 
