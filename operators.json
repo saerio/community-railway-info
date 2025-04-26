@@ -108,5 +108,13 @@
             "563650375824179202"
         ],
         "uid": "ovb"
-    }
+    },
+    {
+        "name": "Alba Railways",
+        "short": "ALB",
+        "color": "#ccccff",
+        "users": [
+            "531472858577108992"
+        ],
+        "uid": "alba"
 ]
