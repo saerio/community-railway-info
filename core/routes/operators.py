@@ -3,6 +3,7 @@ from core import main_dir
 from core.config import config
 
 import json
+import requests
 
 operators = Blueprint('operators', __name__)
 
@@ -62,6 +63,24 @@ def operator_route(uid):
         line for line in lines
         if 'operator_uid' in line and line['operator_uid'] == uid
     ]
+    
+    avatar_base_url = "https://cdn.discordapp.com/avatars/"
+    default_avatar = "https://cdn.discordapp.com/embed/avatars/0.png"
+
+    if operator and 'users' in operator:
+        operator['user_avatars'] = []
+        for user_id in operator['users']:
+            avatar_url = "https://avatar-cyan.vercel.app/api/" + user_id
+            
+            try:
+                avatar_url = requests.get(avatar_url).json()
+            except Exception:
+                avatar_url = {"avatarUrl": default_avatar}
+            
+            operator['user_avatars'].append({
+                'id': user_id,
+                'avatar_url': avatar_url["avatarUrl"].replace("?size=512", "?size=32")
+            })
 
     return render_template(
         'operator_lines.html',

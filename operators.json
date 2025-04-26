@@ -1,3 +1,5 @@
+
+
 [
     {
         "name": "Magwer Transport",
@@ -117,5 +119,14 @@
             "531472858577108992"
         ],
         "uid": "alba"
+    },
+    {
+        "name": "MTA Metro-South Railroad",
+        "short": "msr",
+        "color": "#FF5D5D",
+        "users": [
+            "709020485094080533"
+        ],
+        "uid": "msr"
     }
 ]

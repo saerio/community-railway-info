@@ -27,9 +27,9 @@
   },
   {
     "name": "R11",
-    "status": "Possible delays",
+    "color": "#ff954a",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Riverside Central",
       "Kothausen",
@@ -184,9 +184,9 @@
   },
   {
     "name": "R102",
-    "status": "Possible delays",
+    "color": "#ff954a",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Riverside Central",
       "Kothausen",
@@ -227,9 +227,9 @@
   },
   {
     "name": "IC105",
-    "status": "Possible delays",
+    "color": "#ff954a",
+    "status": "Suspended",
     "notice": "Works in Silverfall",
-    "color": "#FF954A",
     "stations": [
       "Silverfall",
       "Novaburg Central",
@@ -263,9 +263,9 @@
   },
   {
     "name": "IC682",
-    "status": "Possible delays",
-    "notice": "Works in Silverfall",
     "color": "#45bf9d",
+    "status": "Suspended",
+    "notice": "Works in Silverfall",
     "stations": [
       "Riverside Central",
       "Kothausen",
