@@ -2,4 +2,5 @@
 - Add admin panel (Add new railway companies)
 - Add company edit modal (Change color)
 - make the “community railway” button at the top a link back to homepage
-
+- Add installation instructions for ComputerCraft display
+- Support multiple railway companies for a single user
