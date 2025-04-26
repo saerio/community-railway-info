@@ -16,12 +16,13 @@
                 <option value="WARNING">Warning</option>
                 <option value="ERROR">Error</option>
             </select>
-            <button onclick="clearLogs()" class="clear-button">Clear logs</button>
+            <button onclick="clearLogs()" class="smd-component_button-small clear-logs" style="font-family: Poppins;">Clear logs</button>
         </div>
         <div class="log-container">
             {% for log in logs %}   
             <div class="log-entry" data-level="{{ log[1].split('[')[1].split(']')[0] if '[' in log[1] else 'INFO' }}">
-                <span class="log-message">{{ log[0] }} {{ log[1] }}</span>
+                <span class="log-timestamp">{{ log[0] }}</span>
+                <span class="log-message">{{ log[1] }}</span>
             </div>
             {% endfor %}
         </div>
@@ -47,7 +48,7 @@ function filterLogs() {
 }
 
 function clearLogs() {
-    if (confirm('Möchten Sie wirklich alle Logs löschen?')) {
+    if (confirm('Do you really want to clear the logs?')) {
         fetch('/admin/clear-logs', { method: 'POST' })
             .then(response => response.json())
             .then(data => {

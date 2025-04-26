@@ -288,5 +288,18 @@
     ],
     "operator": "Kothausen Railways",
     "operator_uid": "kothausen"
+  },
+  {
+    "name": "S70",
+    "color": "#ee0034",
+    "status": "No scheduled service",
+    "notice": "Service has not started",
+    "stations": [
+      "Two Cities Central",
+      "Spawn",
+      "Lavender Valley"
+    ],
+    "operator": "MTA Metro-South Railroad",
+    "operator_uid": "msr"
   }
 ]
