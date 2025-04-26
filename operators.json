@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Magwer Transport",
+        "short": "MT",
+        "color": "#29B442"
+    },
+    {
+        "name": "Danube Rails",
+        "short": "DR",
+        "color": "#FF954A"
+    },
+    {
+        "name": "Stacode X Railways",
+        "short": "SXR",
+        "color": "#378648"
+    },
+    {
+        "name": "Patriots Transit",
+        "short": "TPT",
+        "color": "#C37A99"
+    },
+    {
+        "name": "LR",
+        "short": "LR", 
+        "color": "#BA42AE"
+    },
+    {
+        "name": "Agilis",
+        "short": "AG",
+        "color": "#B1FA4C"
+    },
+    {
+        "name": "Deutsche Bahn",
+        "short": "DB",
+        "color": "#FF5D5D"
+    },
+    {
+        "name": "Baylink",
+        "short": "BL",
+        "color": "#9fc5e8"
+    },
+    {
+        "name": "Valiance",
+        "short": "VAL",
+        "color": "#ed558d"
+    },
+    {
+        "name": "MAV",
+        "short": "MAV",
+        "color": "#45bf9d"
+    }
+]
