@@ -1,11 +1,14 @@
-from flask import render_template, session, redirect, url_for
+from flask import Blueprint, render_template, session, redirect, url_for
 from core import main_dir
 from core.config import config
 
 import json
 
+admin = Blueprint('admin', __name__)
 
-def admin():
+
+@admin.route('/admin')
+def admin_route():
     user = session.get('user')
 
     if not user or user.get('id') not in config.web_admins:
@@ -27,4 +30,26 @@ def admin():
         operator=operator,
         admin=True,
         lines=lines
+    )
+
+
+@admin.route('/admin/logs')
+def admin_logs():
+    user = session.get('user')
+
+    if not user or user.get('id') not in config.web_admins:
+        return redirect(url_for('index.index_route'))
+
+    with open(main_dir + '/server.log') as f:
+        logs = f.readlines()
+        
+    logs = [log.strip() for log in logs if log.strip()]
+    logs = [log.split(' - ', 1) for log in logs]
+    logs = [(log[0], log[1].split(' - ', 1)[1] if len(log) > 1 else '') for log in logs]
+
+    return render_template(
+        'admin_logs.html',
+        user=user,
+        admin=True,
+        logs=logs
     )

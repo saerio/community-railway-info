@@ -1,10 +1,10 @@
 from flask import Flask
 from core.utils import load_secret
 from core.config import config
+
 from core.routes.oauth2 import auth
 from core.routes.dashboard import dashboard
 from core.routes.index import index
-
 from core.routes.admin import admin
 from core.routes.operators import operators
 
@@ -26,8 +26,7 @@ app.register_blueprint(auth)
 app.register_blueprint(dashboard)
 app.register_blueprint(index)
 app.register_blueprint(operators)
-
-app.add_url_rule(rule="/admin", view_func=admin)
+app.register_blueprint(admin)
 
 
 @app.route('/lines.json')

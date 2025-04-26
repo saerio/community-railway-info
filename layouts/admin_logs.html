@@ -1,0 +1,22 @@
+{% extends "base/base.html" %}
+{% block stylesheet %}
+<link rel="stylesheet" href="/static/css/index.css">
+<link rel="stylesheet" href="/static/css/admin.css">
+{% endblock stylesheet %}
+
+{% block content %}
+<div class="content">
+    <h1>Server Logs</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    {% for log in logs %}
+                    <pre>{{ log[0] }}: {{ log[1] }}</pre>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
