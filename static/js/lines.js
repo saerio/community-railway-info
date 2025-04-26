@@ -38,7 +38,7 @@ function fetchLines() {
                         modalContent.innerHTML = `
                             <div style="display: flex; align-items: center">
                                 <h1 class="line-modal" style="background-color: ${lineData.color}">${lineData.name}</h1>
-                                <span style="margin-left: 16px">${lineData.operator || ''}</span>
+                                <span style="margin-left: 16px" class="line-modal" onclick="window.location.href = '/operators/${lineData.operator_uid || ''}'">${lineData.operator || ''}</span>
                             </div>
                             <h3>${statusEmoji} ${lineData.status || 'No description available'}</h3>
                             <p>${lineData.notice || 'No notice available'}</p>
